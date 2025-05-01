@@ -1,12 +1,31 @@
-# React + Vite
+# Supabase Google Auth with Custom Username Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React application that implements Google OAuth authentication using Supabase. After signing in, users can optionally set a custom username, which is saved to their `user_metadata`.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔧 Features
 
-## Expanding the ESLint configuration
+- 🔐 Google Sign-in using Supabase Auth
+- ✍️ Prompt user to set a unique username (stored in metadata)
+- 💾 Persist user sessions across reloads
+- 👋 Sign out functionality
+- ⚛️ Built with React and Supabase SDK
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Getting Started
+
+1. **Clone the repo**
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+
+## 📦 Dependencies
+
+These are the required dependencies based on [Supabase's React Auth Quickstart](https://supabase.com/docs/guides/auth/quickstarts/react):
+
+```bash
+npm install @supabase/supabase-js @supabase/auth-ui-react @supabase/auth-ui-shared
